@@ -1,0 +1,5 @@
+ttp_template = """
+interface {{ interface }}
+ ipv4 address {{ ip }} {{ mask }}
+ description {{ description }}
+"""
