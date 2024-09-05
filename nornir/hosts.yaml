@@ -1,0 +1,12 @@
+R1:
+  hostname: '192.168.246.95'
+  port: 22
+  username: 'wtr'
+  password: 'wtr'
+  platform: 'iosxr'
+R2:
+  hostname: '192.168.246.96'
+  port: 22
+  username: 'wtr'
+  password: 'wtr'
+  platform: 'iosxr'
