@@ -1,0 +1,525 @@
+2024-09-04 17:49:09,141 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-04 17:49:21,697 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Wed\\ Sep\\ \\ 4\\ 20:48:47\\.969\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-04 17:49:21,744 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Wed\\ Sep\\ \\ 4\\ 20:48:48\\.223\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-04 17:50:27,556 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-04 17:50:38,708 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Wed\\ Sep\\ \\ 4\\ 20:50:04\\.986\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-04 17:51:22,473 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-04 17:54:55,688 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-04 17:56:57,282 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Wed\\ Sep\\ \\ 4\\ 20:54:33\\.782\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-04 17:56:57,735 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Wed\\ Sep\\ \\ 4\\ 20:54:33\\.991\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-04 17:57:22,457 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-04 18:01:11,141 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 1 hosts
+2024-09-04 18:01:23,011 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 1 hosts
+2024-09-04 18:03:24,258 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Wed\\ Sep\\ \\ 4\\ 21:01:00\\.751\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-04 18:03:47,854 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 1 hosts
+2024-09-04 18:14:15,882 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-04 18:14:16,783 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/pyIOSXR/iosxr.py", line 185, in open
+    self.device = ConnectHandler(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 192.168.246.96:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/pyIOSXR/iosxr.py", line 201, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 192.168.246.96:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 192.168.246.96:22
+
+
+Authentication failed.
+
+2024-09-04 18:14:16,856 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/pyIOSXR/iosxr.py", line 185, in open
+    self.device = ConnectHandler(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 192.168.246.95:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/pyIOSXR/iosxr.py", line 201, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 192.168.246.95:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 192.168.246.95:22
+
+
+Authentication failed.
+
+2024-09-04 18:14:45,859 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-04 18:38:06,016 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:39:30,595 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:39:54,562 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:42:46,631 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:42:48,425 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 11, in nornir_task_wtr
+    nornir_inspect(command)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 111, in nornir_inspect
+    print(create_object_attribute_tree(nr_result, vals, headings))  # noqa: T001
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 34, in create_object_attribute_tree
+    for k, v in nr_result.items():
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'items'
+
+2024-09-04 18:43:55,835 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:43:57,482 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 11, in nornir_task_wtr
+    nornir_inspect(command)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 111, in nornir_inspect
+    print(create_object_attribute_tree(nr_result, vals, headings))  # noqa: T001
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 34, in create_object_attribute_tree
+    for k, v in nr_result.items():
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'items'
+
+2024-09-04 18:44:33,595 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:44:35,882 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 11, in nornir_task_wtr
+    nornir_inspect(command)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 111, in nornir_inspect
+    print(create_object_attribute_tree(nr_result, vals, headings))  # noqa: T001
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 34, in create_object_attribute_tree
+    for k, v in nr_result.items():
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'items'
+
+2024-09-04 18:46:00,363 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:46:02,570 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 11, in nornir_task_wtr
+    nornir_inspect(command)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 111, in nornir_inspect
+    print(create_object_attribute_tree(nr_result, vals, headings))  # noqa: T001
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 34, in create_object_attribute_tree
+    for k, v in nr_result.items():
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'items'
+
+2024-09-04 18:46:47,740 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:46:49,315 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 11, in nornir_task_wtr
+    nornir_inspect(command)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 111, in nornir_inspect
+    print(create_object_attribute_tree(nr_result, vals, headings))  # noqa: T001
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 34, in create_object_attribute_tree
+    for k, v in nr_result.items():
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'items'
+
+2024-09-04 18:47:07,318 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:47:21,811 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:47:24,470 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 14, in nornir_task_wtr
+    nornir_inspect(commit)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 111, in nornir_inspect
+    print(create_object_attribute_tree(nr_result, vals, headings))  # noqa: T001
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_inspect.py", line 34, in create_object_attribute_tree
+    for k, v in nr_result.items():
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'items'
+
+2024-09-04 18:47:59,040 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:48:01,685 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 13, in nornir_task_wtr
+    print(commit.keys())
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'Result' object has no attribute 'keys'
+
+2024-09-04 18:49:02,440 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:49:04,998 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/nornir/exemplo7.py", line 13, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-04 18:56:02,201 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:57:19,051 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:57:52,554 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:58:29,416 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:59:16,603 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 18:59:45,751 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 19:00:16,412 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 19:00:56,532 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 19:03:50,940 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-04 19:04:01,763 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 15:46:37,727 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-05 15:48:39,104 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Thu\\ Sep\\ \\ 5\\ 18:46:14\\.447\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-05 15:49:32,892 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-05 15:51:34,646 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Thu\\ Sep\\ \\ 5\\ 18:49:10\\.052\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-05 15:51:35,049 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Thu\\ Sep\\ \\ 5\\ 18:49:10\\.209\\ UTC' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-05 15:52:21,216 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-05 16:00:16,138 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-05 16:01:32,225 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-05 16:36:40,324 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
