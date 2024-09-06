@@ -523,3 +523,4 @@ You can also look at the Netmiko session_log or debug log for more information.
 2024-09-05 16:00:16,138 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
 2024-09-05 16:01:32,225 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
 2024-09-05 16:36:40,324 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-05 18:36:29,622 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts

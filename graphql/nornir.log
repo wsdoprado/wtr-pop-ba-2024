@@ -1,0 +1,1679 @@
+2024-09-05 13:44:09,638 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 13:45:11,443 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 13:45:15,572 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/nornir7.py", line 24, in nornir_task_wtr
+    print(interface['shutdown'])
+KeyError: 'shutdown'
+
+2024-09-05 13:45:15,581 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/nornir7.py", line 24, in nornir_task_wtr
+    print(interface['shutdown'])
+KeyError: 'shutdown'
+
+2024-09-05 13:45:36,566 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 13:48:51,198 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 13:50:36,569 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 13:57:07,904 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 13:57:07,922 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 44, in nornir_task_wtr
+    print(device_list.json())
+AttributeError: 'dict' object has no attribute 'json'
+
+2024-09-05 13:57:07,931 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 44, in nornir_task_wtr
+    print(device_list.json())
+AttributeError: 'dict' object has no attribute 'json'
+
+2024-09-05 13:57:36,116 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:02:21,352 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:34:04,796 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:34:04,798 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:04,798 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:19,900 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:34:19,901 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:19,901 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:43,157 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:34:43,157 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:43,157 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:55,358 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:34:55,359 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:34:55,359 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:35:14,284 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:37:07,987 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:37:07,987 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:37:07,988 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 20, in nornir_task_wtr
+    GRAPHQL_QUERY = {"query": f"""
+ValueError: Invalid format specifier
+
+2024-09-05 14:38:30,126 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:38:55,866 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:39:12,113 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:40:45,716 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:41:01,296 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:42:18,835 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:43:44,403 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:44:13,974 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:44:13,989 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 56, in nornir_task_wtr
+    for interface in device_netbox.json()['data']['device_list']['interfaces']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:44:13,997 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 56, in nornir_task_wtr
+    for interface in device_netbox.json()['data']['device_list']['interfaces']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:44:50,283 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:44:50,304 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 56, in nornir_task_wtr
+    for interface in device_netbox.json()['data']['device_list']['interfaces']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:44:50,304 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 56, in nornir_task_wtr
+    for interface in device_netbox.json()['data']['device_list']['interfaces']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:44:56,160 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:45:21,069 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:45:21,084 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 56, in nornir_task_wtr
+    for interface in device_netbox['interfaces']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:45:21,091 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 56, in nornir_task_wtr
+    for interface in device_netbox['interfaces']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:45:37,556 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:46:04,864 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:49:42,095 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:50:48,848 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:54:28,920 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:58:38,128 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 14:58:42,790 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 65, in nornir_task_wtr
+    if interface_name_netbox in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 14:58:42,888 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 65, in nornir_task_wtr
+    if interface_name_netbox in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:00:17,364 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:00:21,432 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 65, in nornir_task_wtr
+    if interface_name_netbox in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:00:22,953 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 65, in nornir_task_wtr
+    if interface_name_netbox in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:03:26,944 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:05:26,771 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:05:30,895 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:05:31,616 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:05:39,687 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:05:43,819 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:05:43,889 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in json_interfaces['interface-name']:
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:13:16,148 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:13:21,410 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in str(json_interfaces['interface-name']):
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:13:21,642 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in str(json_interfaces['interface-name']):
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:21:03,577 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:21:08,218 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in str(json_interfaces['interface-name']):
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:21:08,506 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 71, in nornir_task_wtr
+    if "GigabitEthernet0/0/0/0" in str(json_interfaces['interface-name']):
+TypeError: list indices must be integers or slices, not str
+
+2024-09-05 15:25:10,051 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:31:22,759 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:31:42,291 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:33:14,022 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:33:43,265 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:36:36,088 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:36:40,913 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:36:40,938 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:36:41,599 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:36:41,666 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:37:07,597 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:38:18,652 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:38:23,522 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:38:23,586 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:38:24,050 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:38:24,117 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:41:08,869 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:41:13,794 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:41:13,864 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:41:13,879 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:41:13,942 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:41:14,328 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:41:14,390 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2327, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 381, in readline
+    buf += self._read_timeout(timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/packet.py", line 616, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 738, in start_client
+    raise e
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2143, in run
+    self._check_banner()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/transport.py", line 2331, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1190, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner[Errno 104] Connection reset by peer
+
+
+
+2024-09-05 15:41:35,801 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:41:40,602 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:41:40,602 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 81, in nornir_task_wtr
+    command = task.run(netmiko_send_config, config_commands=configurations)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2024-09-05 15:41:41,056 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:41:41,056 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 81, in nornir_task_wtr
+    command = task.run(netmiko_send_config, config_commands=configurations)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2024-09-05 15:44:45,262 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:44:50,066 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:44:50,067 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 76, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:44:51,106 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:44:51,107 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 76, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:45:31,036 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:45:35,929 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:45:35,929 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 77, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:45:36,621 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:45:36,621 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 77, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:53:29,119 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:53:34,606 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:53:34,607 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 77, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:53:34,670 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:53:34,671 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 77, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:53:58,328 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:54:03,216 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:54:03,217 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:54:03,303 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:54:03,303 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:55:18,986 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:55:23,795 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:55:23,796 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:55:25,114 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:55:25,115 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:55:29,147 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:55:34,050 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:55:34,051 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:55:34,157 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:55:34,158 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:56:48,820 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 15:56:53,652 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:56:53,652 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popmg-96': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:56:53,737 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1196, in establish_connection
+    self.remote_conn = self.remote_conn_pre.invoke_shell(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 599, in invoke_shell
+    chan.invoke_shell()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 70, in _check
+    return func(self, *args, **kwds)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 228, in invoke_shell
+    self._wait_for_event()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/channel.py", line 1224, in _wait_for_event
+    raise e
+paramiko.ssh_exception.SSHException: Channel closed.
+
+2024-09-05 15:56:53,737 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/netconf.py", line 78, in nornir_task_wtr
+    print_result(task.run(netmiko_send_command, read_timeout=120, command_string=interface_command))
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-05 15:57:35,311 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 15:59:15,870 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:03:57,674 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:06:00,745 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:17:50,701 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:19:50,837 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:20:38,372 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:21:41,460 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:23:12,294 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:23:16,034 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/exercicio_napalm.py", line 68, in nornir_task_wtr
+    interface_mtu_netbox = interface_netbox['mtu']
+KeyError: 'mtu'
+
+2024-09-05 16:24:04,210 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:24:08,019 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr/extra/exercicio_napalm.py", line 69, in nornir_task_wtr
+    interface_mtu_netbox = interface_netbox['mtu']
+KeyError: 'mtu'
+
+2024-09-05 16:26:17,630 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:26:45,199 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:27:02,965 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:27:31,601 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:33:30,380 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:34:15,630 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:35:32,022 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:35:59,682 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:36:13,192 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:40:40,308 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:41:03,178 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:41:46,101 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:42:50,605 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-05 16:43:27,108 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 16:43:56,429 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 16:45:33,459 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-05 16:46:03,391 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 16:46:31,227 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-05 16:52:16,702 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 16:52:58,941 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-05 16:53:15,256 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-06 12:01:55,391 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
+2024-09-06 12:03:03,373 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 2 hosts
