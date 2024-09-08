@@ -1,7 +1,6 @@
-#!/opt/wtr/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 from nornir import InitNornir 
-from nornir import InitNornir
 import requests
 
 url_graphql = "http://localhost:8000/graphql/"

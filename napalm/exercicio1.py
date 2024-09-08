@@ -1,4 +1,4 @@
-#!/opt/wtr/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 from napalm import get_network_driver
 import json, os
@@ -15,9 +15,9 @@ try:
     r1_connection.open()
     print(f"Connecting to {router1['hostname']}")
     #output = r1_connection.get_interfaces() 
-    output = r1_connection.get_facts() 
+    #output = r1_connection.get_facts() 
     #output = r1_connection.get_interfaces_ip() 
-    #output = r1_connection.get_interfaces_counters() 
+    output = r1_connection.get_interfaces_counters() 
     r1_connection.close()
 
     output_json = json.dumps(output, indent=4)

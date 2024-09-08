@@ -1,10 +1,4 @@
-#!/opt/wtr/venv/bin/python3.10
-
-from nornir import InitNornir
-from nornir_rich.functions import print_result     
-from nornir import InitNornir
-from nornir_netmiko.tasks import netmiko_send_config, netmiko_commit
-from nornir_napalm.plugins.tasks import napalm_get
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 import requests
 

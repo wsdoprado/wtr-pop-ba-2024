@@ -1,9 +1,7 @@
-#!/opt/wtr/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
-import os
 from netmiko import ConnectHandler
 from rich import print
-
 
 #dict com os dados do device para acesso
 router1 = {
@@ -27,4 +25,5 @@ try:
 
 except Exception as err:
     print(err)
+
 

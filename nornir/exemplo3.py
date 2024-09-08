@@ -1,3 +1,5 @@
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
+
 from nornir import InitNornir
 from nornir_napalm.plugins.tasks import napalm_get
 from nornir_rich.functions import print_result

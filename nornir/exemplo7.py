@@ -1,3 +1,5 @@
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
+
 from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result
 from nornir_netmiko import netmiko_send_config, netmiko_commit
@@ -29,7 +31,10 @@ nr.inventory.defaults.username = "wtr"
 nr.inventory.defaults.password = "wtr"
 nr.inventory.defaults.port = "22"
 
-nr.run(task=nornir_task_wtr)
+results = nr.run(task=nornir_task_wtr)
+nornir_inspect(results)
+
+print(results['ncs5501-popba-95'][1].result)
 
 
 

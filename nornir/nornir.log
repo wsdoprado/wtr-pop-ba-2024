@@ -524,3 +524,112 @@ You can also look at the Netmiko session_log or debug log for more information.
 2024-09-05 16:01:32,225 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
 2024-09-05 16:36:40,324 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
 2024-09-05 18:36:29,622 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2024-09-07 20:42:53,795 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-07 20:43:03,812 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 192.168.246.96:22
+
+
+
+2024-09-07 21:13:59,034 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'read_timeout': 120, 'command_string': 'show interfaces brief'} on 2 hosts
+2024-09-07 21:18:50,583 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:18:54,847 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/opt/intrarede/venv/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:23:24,251 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:23:28,282 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:24:15,555 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:24:18,343 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:24:58,712 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:25:01,390 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:25:57,864 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:26:00,469 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:26:15,449 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:26:20,744 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:29:57,359 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:29:59,996 - nornir.core.task -    ERROR -      start() - Host 'ncs5501-popba-95': task 'nornir_task_wtr' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/opt/wtr-pop-ba-2024/nornir/exemplo7.py", line 15, in nornir_task_wtr
+    print(commit['ncs5501-popba-95'])
+TypeError: list indices must be integers or slices, not str
+
+2024-09-07 21:30:50,252 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts
+2024-09-07 21:31:16,839 -  nornir.core -     INFO -        run() - Running task 'nornir_task_wtr' with args {} on 1 hosts

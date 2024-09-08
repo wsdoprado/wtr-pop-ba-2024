@@ -1,4 +1,4 @@
-#!/opt/wtr/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 from scrapli_netconf.driver import NetconfDriver
 import json, os, xmltodict
@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-router1 = {"host": "192.168.246.96","auth_username": os.getenv("LAB_USERNAME"),"auth_password": os.getenv("LAB_PASSWORD"), "port": 830}
+router1 = {"host": "192.168.246.95","auth_username": os.getenv("LAB_USERNAME"),"auth_password": os.getenv("LAB_PASSWORD"), "port": 830}
 
 try:
     with NetconfDriver(**router1) as conn:

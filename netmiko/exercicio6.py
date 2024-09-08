@@ -1,4 +1,4 @@
-#!/opt/wtr/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 import os
 from dotenv import load_dotenv

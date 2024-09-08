@@ -1,18 +1,15 @@
-#!/opt/wtr/venv/bin/python3.10
-
-"""
-Script: exemplo1 - Tipo de Dados em Python
-Author: William Prado
-Email: wprado@nic.br  | wsprado@outlook.com
-"""
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 #String
 nome = "William Stpehan do Prado"
 
+#Inteiro
 idade = 32
 
+#Float
 altura = 1.82
 
+#Boolean
 futebol = True
 
 #mostrar no terminal o conteudo da variavel nome e idade

@@ -1,4 +1,4 @@
-#!/opt/wtr/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 import os
 from dotenv import load_dotenv
@@ -8,7 +8,6 @@ from rich import print
 load_dotenv()
 
 router1 = {"device_type": "cisco_xr","host": "192.168.246.95","username": os.getenv("LAB_USERNAME"),"password": os.getenv("LAB_PASSWORD")}
-
 router2 = {"device_type": "cisco_xr","host": "192.168.246.96","username": os.getenv("LAB_USERNAME"),"password": os.getenv("LAB_PASSWORD")}
 
 try:
@@ -33,4 +32,5 @@ try:
 
 except Exception as err:
     print(err)
+
 

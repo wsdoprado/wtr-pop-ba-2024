@@ -1,4 +1,4 @@
-#!/opt/intrarede/venv/bin/python3.10
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
 
 import os
 from dotenv import load_dotenv
@@ -7,19 +7,14 @@ from rich import print
 
 load_dotenv()
 
-PE3 = {
-    "device_type": "cisco_xr",
-    "host": "192.168.246.96",
-    "username": os.getenv("LAB_USERNAME"),
-    "password": os.getenv("LAB_PASSWORD")
-}
+router1 = {"device_type": "cisco_xr","host": "192.168.246.95","username": os.getenv("LAB_USERNAME"),"password": os.getenv("LAB_PASSWORD")}
 
 try: 
-    pe3_connection = ConnectHandler(**PE3)
+    r1_connection = ConnectHandler(**router1)
 
-    print(pe3_connection.send_command('show running-config interface'))
+    print(r1_connection.send_command('show running-config interface'))
 
-    pe3_connection.disconnect()
+    r1_connection.disconnect()
     
 except Exception as err:
     print(err)

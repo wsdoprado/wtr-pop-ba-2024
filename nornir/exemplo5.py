@@ -1,3 +1,5 @@
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
+
 from nornir import InitNornir
 
 nr = InitNornir(

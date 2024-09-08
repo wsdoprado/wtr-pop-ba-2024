@@ -1,3 +1,5 @@
+#!/opt/wtr-pop-ba-2024/venv/bin/python3.10
+
 from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result
 from nornir_netmiko import netmiko_send_config, netmiko_commit
